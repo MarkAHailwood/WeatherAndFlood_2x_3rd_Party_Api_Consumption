@@ -1,0 +1,14 @@
+﻿@model FloodSummary
+
+<form asp-action="Index" method="post" role="form">
+    <div class="form-group">
+        <h3>Enter flood area below:</h3>
+        <label asp-for="County"></label>
+        <div>
+            <input asp-for="County" class="form-control input-group-sm col-md-5"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Get Flood Data" />
+    </div>
+</form>

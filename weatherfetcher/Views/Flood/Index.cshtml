@@ -1,0 +1,29 @@
+﻿@model List<FloodSummary>
+
+@{ 
+    Layout = "_Layout";
+}
+
+<div class="text-centre">
+    <h2>A flood summary for: @ViewBag.County</h2>
+    
+</div>
+<div style="margin-bottom:20px">
+    <a class="btn btn-primary btn-sm" asp-action="Blank" asp-controller="Flood"> Back to previous page </a><br />
+</div>
+
+<table class="table table-striped pre-scrollable">
+    <tr>
+        <th>Description</th>
+        <th>Message</th>
+        <th>Severity Level</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Description</td>
+            <td>@item.Message</td>
+            <td>@item.SeverityLevel</td>
+        </tr>
+    }
+</table>

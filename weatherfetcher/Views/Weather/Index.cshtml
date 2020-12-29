@@ -1,0 +1,36 @@
+﻿@model List<WeatherForecast>
+
+@{
+    ViewData["Title"] = "Weather Forecast";
+}
+
+<div class="text-center">
+    <h2 class="display-4">A 7 day forecast for </h2>
+    <h3 class="display-5">@Model[0].Location</h3>
+</div>
+
+<div style="margin-bottom:20px">
+    <a class="btn btn-primary btn-sm" asp-action="Blank" asp-controller="Weather"> Back to previous page </a><br />
+</div>
+
+<div>
+    <table class="table table-striped">
+        <tr>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Minimum</th>
+            <th>Maximum</th>
+            <th>Feels Like</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Date</td>
+                <td>@item.Location</td>
+                <td>@item.TempMin</td>
+                <td>@item.TempMax</td>
+                <td>@item.FeelsLike</td>
+            </tr>
+        }
+    </table>
+</div>

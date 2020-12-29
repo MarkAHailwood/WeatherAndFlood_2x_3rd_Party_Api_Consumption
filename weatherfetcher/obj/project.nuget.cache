@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VQ89lOKru7IuHUe4/ti+7A7td+PgFytC1AhpZmbOuHDURma1P7o7Xsx1pNJskWYCTsK+B5rdLiD+KBL/1hMVfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hmark\\source\\repos\\weatherfetcher\\weatherfetcher\\weatherfetcher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hmark\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
